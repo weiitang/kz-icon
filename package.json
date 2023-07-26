@@ -1,13 +1,15 @@
 {
   "name": "icon",
   "version": "0.4.9",
-  "description": "ma icons management",
+  "description": "icons management",
   "main": "dist/index.js",
   "types": "src/index.d.js",
   "scripts": {
     "test": "jest --coverage",
     "fetch": "node scripts/fetch.js",
     "generate": "rm -rf src/icons && rm -rf src/rn && node scripts/generate.js",
+    "index": "node scripts/index.js",
+    "delete": "rm -rf src/icon",
     "docs": "webpack -c build/webpack.docs.config.js",
     "dev": "webpack serve -c build/webpack.dev.config.js",
     "build:cjs": "babel ./src/icons --out-dir ./src/cjs --config-file ./build/babel.cjs.config.js --keep-file-extension --copy-files --no-babelrc",
@@ -16,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.woa.com:timkit/ma-icons.git"
+    "url": "https://github.com/weiitang/icon.git"
   },
   "keywords": [
     "icon"
@@ -48,6 +50,7 @@
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "react-test-renderer": "^17.0.2",
+    "shelljs": "^0.8.5",
     "style-loader": "^3.3.1",
     "styled-components": "^5.3.3",
     "uppercamelcase": "^3.0.0",
