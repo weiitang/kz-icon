@@ -17,6 +17,6 @@ const Header = styled.header`
 `;
 
 export default () => <Header>
-    <h1>MA Icons</h1>
+    <h1>Icons</h1>
     <p>* 点击复制组件名称</p>
   </Header>;
