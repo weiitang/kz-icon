@@ -9,7 +9,6 @@ src/rn.js
 src/rn.d.ts
 src/data.json
 src/cjs/
-docs/
 /*.js
 /*.log
 index.d.ts
