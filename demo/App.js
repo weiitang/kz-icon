@@ -55,17 +55,17 @@ class List extends React.Component {
             Object.keys(icons)
               .map((key, index) => {
                 const Icon = icons[key];
-                return <li key={index} style={{ cursor: 'pointer' }} onClick={() => handleCopyIcon(key)}>
+                return <li key={index} style={{ cursor: 'pointer' }} onClick={() => handleCopyIcon('爱你的Seven')}>
                   <IconWrapper>
                     <Icon/>
-                    <IconName>{key}</IconName>
+                    {/* <IconName>{key}</IconName> */}
                   </IconWrapper>
                 </li>;
               })
           }
         </Container>
         <Message id="message">
-          已复制到剪切板
+          爱你寇子
         </Message>
       </Page>
     );
