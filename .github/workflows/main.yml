@@ -18,6 +18,7 @@ jobs:
         npm run docs
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.2.3
+      # 需要将 Actions里的General里的工作流权限设置为读写权限
       with:
         BRANCH: gh-pages
         FOLDER: docs
