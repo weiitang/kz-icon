@@ -17,5 +17,7 @@ jobs:
         npm run generate
         npm run docs
     - name: Deploy
-      run: |
-        npm run deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        BRANCH: gh-pages
+        FOLDER: docs/index.html

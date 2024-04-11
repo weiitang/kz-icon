@@ -15,7 +15,7 @@
     "build:cjs": "babel ./src/icons --out-dir ./src/cjs --config-file ./build/babel.cjs.config.js --keep-file-extension --copy-files --no-babelrc",
     "build": "webpack -c build/webpack.prod.config.js",
     "lint": "eslint scripts build demo test --fix",
-    "pages": "npx isnstall && npx run generate && npm run docs",
+    "pages": "npm install && npm run generate && npm run docs",
     "deploy": "gh-pages -d build"
   },
   "repository": {
@@ -25,6 +25,7 @@
   "keywords": [
     "icon"
   ],
+  "homepage": "https://weiitang.github.io/icon/",
   "author": "weiitang",
   "license": "ISC",
   "devDependencies": {
