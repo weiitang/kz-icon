@@ -14,7 +14,9 @@
     "dev": "webpack serve -c build/webpack.dev.config.js",
     "build:cjs": "babel ./src/icons --out-dir ./src/cjs --config-file ./build/babel.cjs.config.js --keep-file-extension --copy-files --no-babelrc",
     "build": "webpack -c build/webpack.prod.config.js",
-    "lint": "eslint scripts build demo test --fix"
+    "lint": "eslint scripts build demo test --fix",
+    "pages": "npx isnstall && npx run generate && npm run docs",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -60,5 +62,8 @@
   },
   "peerDependencies": {
     "react": "^17.0.2"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
