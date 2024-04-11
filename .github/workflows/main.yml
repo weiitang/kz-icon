@@ -21,4 +21,4 @@ jobs:
       # 需要将 Actions里的General里的工作流权限设置为读写权限
       with:
         BRANCH: gh-pages
-        FOLDER: docs
+        FOLDER: /

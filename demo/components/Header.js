@@ -19,6 +19,6 @@ const Header = styled.header`
 export default () => <Header>
     {/* <h1>Icons</h1>
     <p>* 点击复制组件名称</p> */}
-    <h1>Init</h1>
+    <h1>KZ&Seven</h1>
     <p>* 点击复制❤️</p>
   </Header>;
