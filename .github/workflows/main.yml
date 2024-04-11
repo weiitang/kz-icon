@@ -17,8 +17,7 @@ jobs:
         npm run generate
         npm run docs
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: actions/deploy-pages@v4
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
         FOLDER: docs/index.html
