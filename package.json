@@ -1,6 +1,6 @@
 {
-  "name": "icon",
-  "version": "0.4.9",
+  "name": "kz-icon",
+  "version": "1.0.0",
   "description": "icons management",
   "main": "dist/index.js",
   "types": "src/index.d.js",
@@ -13,7 +13,7 @@
     "docs": "webpack -c build/webpack.docs.config.js",
     "dev": "webpack serve -c build/webpack.dev.config.js",
     "build:cjs": "babel ./src/icons --out-dir ./src/cjs --config-file ./build/babel.cjs.config.js --keep-file-extension --copy-files --no-babelrc",
-    "build": "webpack -c build/webpack.prod.config.js",
+    "build": "rm -rf dist && webpack -c build/webpack.prod.config.js",
     "lint": "eslint scripts build demo test --fix",
     "pages": "npm install && npm run generate && npm run docs",
     "deploy": "gh-pages -d build"

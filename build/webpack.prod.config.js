@@ -11,11 +11,13 @@ module.exports = {
     },
     path: path.join(rootDir, 'dist'),
     filename: 'index.js',
+    clean: true,
+    chunkFilename: '[name]_[chunkhash].js',
     library: {
       type: 'umd',
     },
   },
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {
